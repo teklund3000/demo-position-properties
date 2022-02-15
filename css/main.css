@@ -188,14 +188,21 @@ ul {
 
 .relative {
     /* add relative properties here */
+    position: relative;
+    top: 40px; 
+    right: 20px;
 }
 
 .relative-2 {
     /* add relative-2 properties here */
+    position: relative;
 }
 
 .absolute {
     /* add absolute properties here */
+    position: absolute;
+    /* top:0;
+    right: 0; */
 }
 
 .absolute-2 {
@@ -203,6 +210,11 @@ ul {
     height: 75px;
     border: 2px solid #a89070;
     /* add absolute-2 properties here */
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    /* if .relative-2 was not position: relative; then the little brown box would escape the
+    parent container (.relative-2). With position:relative on parent, it stays inside parent. */
 }
 
 .absolute-2 .box-paragraph {
@@ -213,6 +225,9 @@ ul {
 
 .fixed {
     /* add fixed properties here */
+    /* position: fixed;
+    top: 50vh;           50% of veiwport height 
+    right: 0; */
 }
 
 
